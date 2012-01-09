@@ -8,7 +8,7 @@
 
 //                                        WARNING
 //!!!!!!!!!!!!!!!!!!                !!!!!!!!!!!!!!!!!!!!             !!!!!!!!!!!!!!!!!!!!!
-//before use, see line 24
+//before use, see line 41
 //		game = false;//set to true or false before use- true for auton & tele-op, false for just 1
 
 
