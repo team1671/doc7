@@ -1,7 +1,7 @@
  #include "CustomDrive.h"
 
 //When assigning motors, ODD is LEFT; EVEN is RIGHT
-
+//WALK WITH ME THROUGH THE F!*KING AUTUMN LEAVES!!
 CustomDrive::CustomDrive(void)
 {
 	//By default, the array is set to all 0's
