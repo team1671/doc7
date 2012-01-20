@@ -1,4 +1,5 @@
 #include "Doc7.h"
+#include "WPILib.h"
 #include "Joystick.h"
 #include <IOstream.h>
 
