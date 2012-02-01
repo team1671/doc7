@@ -1,0 +1,23 @@
+1. Minibot w/Deployment
+2. Battery Pan (w/light sensors)
+3. C-RIO
+4. Wireless Access Bridge w/voltage regulator
+5. Jaguars?				[N]
+6. Pneu. Valves?			[ ]
+7. Compressor?				[ ]
+8. Encoders (Arm and drive train?)	[ ]
+9. 256-1 Transmissions?			[N]
+10. Spikes?				[ ]
+11. Bungees?				[ ]
+12. Camera?				[ ]
+13. RSL?				[ ]
+14. Bumpers?				[N] 
+15. 60 tooth Sprockets? 		[ ]
+16. Arm/Wrist Spindles?			[ ]
+17. Arm Cradle?				[ ]
+18. C-RIO Modules?			[ ]
+19. Pneu. Wires?			[ ]
+20. Digital Ribbon Serial Cable?	[ ]
+21. Pneu. Containers?			[ ]
+22. Pneu. T-fittings?			[ ]
+23. Breaker-to-PDB Connection?		[ ]
