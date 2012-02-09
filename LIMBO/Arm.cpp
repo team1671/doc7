@@ -106,6 +106,3 @@ void Arm::Print(void)
 	printf("%f\n", a_pArmEnc->Get() * -1.4f);
 	Wait(0.1);
 }
-
-
-
