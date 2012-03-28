@@ -1,4 +1,4 @@
- #include "CustomDrive.h"
+#include "CustomDrive.h"
 
 //When assigning motors, ODD is LEFT; EVEN is RIGHT
 
@@ -41,18 +41,18 @@ CustomDrive::CustomDrive(int _nJags, int _gyroPort)
 inline void CustomDrive::TankDrive(float _lSpeed, float _rSpeed)
 {
 	//Sets motor speeds the the arguments in the function
-	
+
 	cd_pMotors[0]->Set((-_lSpeed));
 	cd_pMotors[1]->Set((-_rSpeed));
 	cd_pMotors[2]->Set((-_rSpeed));
 	cd_pMotors[3]->Set((-_lSpeed));
-	
+
 //	for(register int i = 0; i < cd_nJags; i+=2)
 //	{
 //		cd_pMotors[i]->Set(_rSpeed);
 //		cd_pMotors[i+1]->Set(_lSpeed);
 //	};
-	
+
 };
 
 inline void CustomDrive::TankDrive(Joystick* _lStick, Joystick* _rStick)
@@ -108,36 +108,36 @@ inline void CustomDrive::ArcadeDrive(Joystick* _stick)
 void CustomDrive::MecanumDrive(Joystick* _stick)
 {
 	float x = 0.0, y = 0.0, z = 0.0, scalar = 1.0;
-	
+
 	if(_stick->GetRawButton(6)) {scalar = 0.6;}
-	
+
 	x = _stick->GetX();		//Ghetto acceleration curve
 	y = _stick->GetY();
 	z = _stick->GetZ();
-	
-	if(_stick->GetRawButton(7) || _stick->GetRawButton(8)
-	|| _stick->GetRawButton(2) || _stick->GetRawButton(4)) {
-		x = y = z = 0.0;		//Ghetto acceleration curve
+
+	if(_stick->GetRawButton(7) || _stick->GetRawButton(8)) {
+//	|| _stick->GetRawButton(2) || _stick->GetRawButton(4)) {
+		x = y = 0.0;		//Ghetto acceleration curve
 	}
-	
+
 	if(_stick->GetRawButton(7)) {
 		x = -0.7;		//Ghetto acceleration curve
 	}
 	else if(_stick->GetRawButton(8)) {
 		x = 0.7;		//Ghetto acceleration curve
 	}
-	
-	if(_stick->GetRawButton(2)) {
-		y = 0.7;		//Ghetto acceleration curve
-	}
-	else if(_stick->GetRawButton(4)) {
-		y = -0.7;		//Ghetto acceleration curve
-	}
-	
+
+//	if(_stick->GetRawButton(2)) {
+//		y = 0.7;		//Ghetto acceleration curve
+//	}
+//	else if(_stick->GetRawButton(4)) {
+//		y = -0.7;		//Ghetto acceleration curve
+//	}
+
 	if(_stick->GetRawButton(2) && _stick->GetRawButton(4)) {
 		y = 0.0;
 	}
-	
+
 	if(_stick->GetRawButton(7) && _stick->GetRawButton(8)) {
 		x = 0.0;
 	}
